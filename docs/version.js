@@ -7,7 +7,7 @@ lines = membersFile.responseText.split("\n")
 // github and the first part of the path (after the initial /) is the repo name
 user = window.location.host.split('.')[0]
 repo_name = window.location.pathname.split('/')[1]
-text='<img src="https://github.com/'+user+'/'+repo_name+'/actions/workflows/main.yml/badge.svg" style="display:block;margin-left: auto;margin-right: auto;">';
+text='<img src="https://github.com/'+user+'/'+repo_name+'/actions/workflows/CI.yml/badge.svg" style="display:block;margin-left: auto;margin-right: auto;">';
 
 lines.forEach(element => {
     text+='<a href="index_'+element+'.html">Build #'+element+'</a>'
